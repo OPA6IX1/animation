@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.intro {
+  max-width: 50%;
+  text-align: left;
+}
+h2 span {
+  font-family: Fascinate Inline;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00d9ff;
+  margin-bottom: 20px;
+  animation: fadeInLeft 2s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.role {
+  font-weight: bold;
+  color: #00d9ff;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 2.5s ease-in-out;
+  box-shadow: 0 10px 15px rgba(248, 247, 247, 0.3);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.profile-pic-container {
+  max-width: 45%;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00d9ff;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+/* @keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}} */
+}
