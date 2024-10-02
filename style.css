@@ -126,3 +126,50 @@ p {
   }
 }} */
 }
+/* Responsive styling for tablet */
+@media screen and (max-width:768px) {
+  .container {
+    display: block;
+    align-content: center;
+    max-width: 450px;
+
+  }
+
+  .intro {
+    max-width: 100%;
+    text-align: center;
+  }
+  .profile-pic-container {
+    padding-left: 100px;
+    margin-top: 40px;
+    max-width: 80%;
+    animation: fadeIn 3s ease-in-out;
+  }
+  .profile-pic {
+    display: block;
+    align-items: center;
+  }
+
+}
+
+/* Responsive styling for moblie */
+@media screen and (max-width:480px) {
+  .container {
+    display: block;
+    align-content: center;
+    max-width: 225px;
+
+  }
+  .profile-pic-container {
+    padding-left: 36px;
+    margin-top: 40px;
+    max-width: 90%;
+    animation: fadeIn 3s ease-in-out;
+  }
+  .profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}
